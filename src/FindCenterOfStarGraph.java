@@ -27,4 +27,12 @@ public class FindCenterOfStarGraph {
 		}
 		 return queue.poll();
 	}
+	/**
+	 * The question says that the n-1 edges should connect the centre node to all the other nodes.
+	 * So the solution is very easy in such case, and it boils down to
+	 *
+	 * public int findCenter(int[][] edges) {
+	 *    return edges[0][0] == edges[1][0] || edges[0][0] == edges[1][1] ? edges[0][0] : edges[0][1];
+	 * }
+	 * */
 }
